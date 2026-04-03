@@ -1,0 +1,128 @@
+2026-04-02 18:47:23 - Starting base system setup...
+2026-04-02 18:47:23 - Updating package lists...
+2026-04-02 18:47:35 - Upgrading installed packages...
+2026-04-02 18:47:36 - Installing base tools...
+2026-04-02 18:47:36 - Base system setup complete
+2026-04-02 19:11:50 - Starting base system setup...
+2026-04-02 19:11:50 - Updating package lists...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Hit:1 http://ports.ubuntu.com/ubuntu-ports noble InRelease
+Hit:2 http://ports.ubuntu.com/ubuntu-ports noble-updates InRelease
+Hit:3 http://ports.ubuntu.com/ubuntu-ports noble-backports InRelease
+Hit:4 http://ports.ubuntu.com/ubuntu-ports noble-security InRelease
+Reading package lists...
+Building dependency tree...
+Reading state information...
+5 packages can be upgraded. Run 'apt list --upgradable' to see them.
+2026-04-02 19:12:18 - Upgrading installed packages...
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+Calculating upgrade...
+The following upgrades have been deferred due to phasing:
+  libnetplan1 lshw netplan-generator netplan.io python3-netplan
+0 upgraded, 0 newly installed, 0 to remove and 5 not upgraded.
+2026-04-02 19:12:18 - Installing base tools...
+2026-04-02 19:12:19 - Base system setup complete
+
+WARNING: apt does not have a stable CLI interface. Use with caution in scripts.
+
+Reading package lists...
+Building dependency tree...
+Reading state information...
+The following packages were automatically installed and are no longer required:
+  bridge-utils dns-root-data dnsmasq-base ubuntu-fan
+Use 'sudo apt autoremove' to remove them.
+The following additional packages will be installed:
+  docker-ce-rootless-extras libslirp0 slirp4netns
+Suggested packages:
+  cgroupfs-mount | cgroup-lite docker-model-plugin
+The following packages will be REMOVED:
+  containerd docker.io runc
+The following NEW packages will be installed:
+  containerd.io docker-buildx-plugin docker-ce docker-ce-cli
+  docker-ce-rootless-extras docker-compose-plugin libslirp0 slirp4netns
+0 upgraded, 8 newly installed, 3 to remove and 6 not upgraded.
+Need to get 81.4 MB of archives.
+After this operation, 90.9 MB of additional disk space will be used.
+Get:1 https://download.docker.com/linux/ubuntu noble/stable arm64 containerd.io arm64 2.2.2-1~ubuntu.24.04~noble [20.2 MB]
+Get:2 http://ports.ubuntu.com/ubuntu-ports noble/main arm64 libslirp0 arm64 4.7.0-1ubuntu3 [61.8 kB]
+Get:3 http://ports.ubuntu.com/ubuntu-ports noble/universe arm64 slirp4netns arm64 1.2.1-1build2 [34.3 kB]
+Get:4 https://download.docker.com/linux/ubuntu noble/stable arm64 docker-ce-cli arm64 5:29.3.1-1~ubuntu.24.04~noble [14.8 MB]
+Get:5 https://download.docker.com/linux/ubuntu noble/stable arm64 docker-ce arm64 5:29.3.1-1~ubuntu.24.04~noble [19.4 MB]
+Get:6 https://download.docker.com/linux/ubuntu noble/stable arm64 docker-buildx-plugin arm64 0.33.0-1~ubuntu.24.04~noble [14.6 MB]
+Get:7 https://download.docker.com/linux/ubuntu noble/stable arm64 docker-ce-rootless-extras arm64 5:29.3.1-1~ubuntu.24.04~noble [5,660 kB]
+Get:8 https://download.docker.com/linux/ubuntu noble/stable arm64 docker-compose-plugin arm64 5.1.1-1~ubuntu.24.04~noble [6,703 kB]
+Fetched 81.4 MB in 9s (8,676 kB/s)
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 134407 files and directories currently installed.)
+Removing docker.io (28.2.2-0ubuntu1~24.04.1) ...
+'/usr/share/docker.io/contrib/nuke-graph-directory.sh' -> '/var/lib/docker/nuke-graph-directory.sh'
+[0;1;38;5;185mStopping 'docker.service', but its triggering units are still active:[0m
+[0;1;38;5;185mdocker.socket[0m
+Removing containerd (1.7.28-0ubuntu1~24.04.2) ...
+Removing runc (1.3.3-0ubuntu1~24.04.3) ...
+Selecting previously unselected package containerd.io.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 134132 files and directories currently installed.)
+Preparing to unpack .../0-containerd.io_2.2.2-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking containerd.io (2.2.2-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-cli.
+Preparing to unpack .../1-docker-ce-cli_5%3a29.3.1-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking docker-ce-cli (5:29.3.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce.
+Preparing to unpack .../2-docker-ce_5%3a29.3.1-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking docker-ce (5:29.3.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-buildx-plugin.
+Preparing to unpack .../3-docker-buildx-plugin_0.33.0-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking docker-buildx-plugin (0.33.0-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-ce-rootless-extras.
+Preparing to unpack .../4-docker-ce-rootless-extras_5%3a29.3.1-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking docker-ce-rootless-extras (5:29.3.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package docker-compose-plugin.
+Preparing to unpack .../5-docker-compose-plugin_5.1.1-1~ubuntu.24.04~noble_arm64.deb ...
+Unpacking docker-compose-plugin (5.1.1-1~ubuntu.24.04~noble) ...
+Selecting previously unselected package libslirp0:arm64.
+Preparing to unpack .../6-libslirp0_4.7.0-1ubuntu3_arm64.deb ...
+Unpacking libslirp0:arm64 (4.7.0-1ubuntu3) ...
+Selecting previously unselected package slirp4netns.
+Preparing to unpack .../7-slirp4netns_1.2.1-1build2_arm64.deb ...
+Unpacking slirp4netns (1.2.1-1build2) ...
+Setting up docker-buildx-plugin (0.33.0-1~ubuntu.24.04~noble) ...
+Setting up containerd.io (2.2.2-1~ubuntu.24.04~noble) ...
+Setting up docker-compose-plugin (5.1.1-1~ubuntu.24.04~noble) ...
+Setting up docker-ce-cli (5:29.3.1-1~ubuntu.24.04~noble) ...
+Setting up libslirp0:arm64 (4.7.0-1ubuntu3) ...
+Setting up docker-ce-rootless-extras (5:29.3.1-1~ubuntu.24.04~noble) ...
+Setting up slirp4netns (1.2.1-1build2) ...
+Setting up docker-ce (5:29.3.1-1~ubuntu.24.04~noble) ...
+Could not execute systemctl:  at /usr/bin/deb-systemd-invoke line 148.
+Processing triggers for man-db (2.12.0-4build2) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.7) ...
+
+Pending kernel upgrade!
+Running kernel version:
+  6.8.0-101-generic
+Diagnostics:
+  The currently running kernel version is not the expected kernel version 6.8.0-107-generic.
+
+Restarting the system to load the new kernel will not be handled automatically, so you should consider rebooting.
+
+Restarting services...
+
+Service restarts being deferred:
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart serial-getty@ttyAMA0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+User sessions running outdated binaries:
+ temple @ session #1: login[975]
+ temple @ user manager service: systemd[1251]
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
