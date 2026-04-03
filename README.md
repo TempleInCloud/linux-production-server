@@ -107,3 +107,18 @@ curl http://192.168.64.2:30007
 
 ### 🔧 Project Structure
 ![Project Structure](https://github.com/TempleInCloud/linux-production-server/blob/a87d493abf1a7855e29f6063628879d1fb38ea5c/docs/Project%20Structure.png)
+
+---
+
+## 👤 Author
+
+**Temple Osaroejiji**
+
+Platform Engineer | Cloud & DevOps Engineer 
+
+- 🔗 GitHub: https://github.com/TempleInCloud  
+- 🔗 LinkedIn: https://www.linkedin.com/in/temple-osaroejiji 
+
+---
+
+💡 *This project demonstrates my ability to provision, secure, and run production-ready infrastructure using Linux, Docker, and Kubernetes (k3s).*
